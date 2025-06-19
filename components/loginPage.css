@@ -1,0 +1,266 @@
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Animation Classes */
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.animate-fade-in-1 {
+  animation: fadeInDelay 1s ease-out 0.3s both;
+}
+
+.animate-fade-in-2 {
+  animation: fadeInDelay 1s ease-out 0.5s both;
+}
+
+.animate-fade-in-3 {
+  animation: fadeInDelay 1s ease-out 0.7s both;
+}
+
+.animate-fade-in-4 {
+  animation: fadeInDelay 1s ease-out 0.9s both;
+}
+
+.animate-fade-in-5 {
+  animation: fadeInDelay 1s ease-out 1.1s both;
+}
+
+/* Shimmer Effect */
+.hover\:animate-shimmer:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 0.6s ease-out;
+}
+
+/* Floating Particles */
+.animate-float-15 {
+  animation: float 15s infinite linear;
+}
+
+.animate-float-16 {
+  animation: float 16s infinite linear;
+}
+
+.animate-float-17 {
+  animation: float 17s infinite linear;
+}
+
+.animate-float-18 {
+  animation: float 18s infinite linear;
+}
+
+.animate-float-19 {
+  animation: float 19s infinite linear;
+}
+
+.animate-float-20 {
+  animation: float 20s infinite linear;
+}
+
+.animate-float-21 {
+  animation: float 21s infinite linear;
+}
+
+.animate-float-22 {
+  animation: float 22s infinite linear;
+}
+
+.animate-float-23 {
+  animation: float 23s infinite linear;
+}
+
+.animate-float-24 {
+  animation: float 24s infinite linear;
+}
+
+.animate-float-25 {
+  animation: float 25s infinite linear;
+}
+
+/* Animation Delays */
+.animate-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animate-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Particle Positioning and Sizing */
+[data-particle-x] {
+  left: var(--particle-x);
+}
+
+[data-particle-size] {
+  width: var(--particle-size);
+  height: var(--particle-size);
+}
+
+[data-particle-delay] {
+  animation-delay: var(--particle-delay);
+}
+
+/* Custom Properties for Particles */
+[data-particle-x="0"] { left: 0%; }
+[data-particle-x="1"] { left: 1%; }
+[data-particle-x="2"] { left: 2%; }
+[data-particle-x="3"] { left: 3%; }
+[data-particle-x="4"] { left: 4%; }
+[data-particle-x="5"] { left: 5%; }
+[data-particle-x="6"] { left: 6%; }
+[data-particle-x="7"] { left: 7%; }
+[data-particle-x="8"] { left: 8%; }
+[data-particle-x="9"] { left: 9%; }
+[data-particle-x="10"] { left: 10%; }
+[data-particle-x="11"] { left: 11%; }
+[data-particle-x="12"] { left: 12%; }
+[data-particle-x="13"] { left: 13%; }
+[data-particle-x="14"] { left: 14%; }
+[data-particle-x="15"] { left: 15%; }
+[data-particle-x="16"] { left: 16%; }
+[data-particle-x="17"] { left: 17%; }
+[data-particle-x="18"] { left: 18%; }
+[data-particle-x="19"] { left: 19%; }
+[data-particle-x="20"] { left: 20%; }
+[data-particle-x="21"] { left: 21%; }
+[data-particle-x="22"] { left: 22%; }
+[data-particle-x="23"] { left: 23%; }
+[data-particle-x="24"] { left: 24%; }
+[data-particle-x="25"] { left: 25%; }
+[data-particle-x="26"] { left: 26%; }
+[data-particle-x="27"] { left: 27%; }
+[data-particle-x="28"] { left: 28%; }
+[data-particle-x="29"] { left: 29%; }
+[data-particle-x="30"] { left: 30%; }
+[data-particle-x="31"] { left: 31%; }
+[data-particle-x="32"] { left: 32%; }
+[data-particle-x="33"] { left: 33%; }
+[data-particle-x="34"] { left: 34%; }
+[data-particle-x="35"] { left: 35%; }
+[data-particle-x="36"] { left: 36%; }
+[data-particle-x="37"] { left: 37%; }
+[data-particle-x="38"] { left: 38%; }
+[data-particle-x="39"] { left: 39%; }
+[data-particle-x="40"] { left: 40%; }
+[data-particle-x="41"] { left: 41%; }
+[data-particle-x="42"] { left: 42%; }
+[data-particle-x="43"] { left: 43%; }
+[data-particle-x="44"] { left: 44%; }
+[data-particle-x="45"] { left: 45%; }
+[data-particle-x="46"] { left: 46%; }
+[data-particle-x="47"] { left: 47%; }
+[data-particle-x="48"] { left: 48%; }
+[data-particle-x="49"] { left: 49%; }
+[data-particle-x="50"] { left: 50%; }
+[data-particle-x="51"] { left: 51%; }
+[data-particle-x="52"] { left: 52%; }
+[data-particle-x="53"] { left: 53%; }
+[data-particle-x="54"] { left: 54%; }
+[data-particle-x="55"] { left: 55%; }
+[data-particle-x="56"] { left: 56%; }
+[data-particle-x="57"] { left: 57%; }
+[data-particle-x="58"] { left: 58%; }
+[data-particle-x="59"] { left: 59%; }
+[data-particle-x="60"] { left: 60%; }
+[data-particle-x="61"] { left: 61%; }
+[data-particle-x="62"] { left: 62%; }
+[data-particle-x="63"] { left: 63%; }
+[data-particle-x="64"] { left: 64%; }
+[data-particle-x="65"] { left: 65%; }
+[data-particle-x="66"] { left: 66%; }
+[data-particle-x="67"] { left: 67%; }
+[data-particle-x="68"] { left: 68%; }
+[data-particle-x="69"] { left: 69%; }
+[data-particle-x="70"] { left: 70%; }
+[data-particle-x="71"] { left: 71%; }
+[data-particle-x="72"] { left: 72%; }
+[data-particle-x="73"] { left: 73%; }
+[data-particle-x="74"] { left: 74%; }
+[data-particle-x="75"] { left: 75%; }
+[data-particle-x="76"] { left: 76%; }
+[data-particle-x="77"] { left: 77%; }
+[data-particle-x="78"] { left: 78%; }
+[data-particle-x="79"] { left: 79%; }
+[data-particle-x="80"] { left: 80%; }
+[data-particle-x="81"] { left: 81%; }
+[data-particle-x="82"] { left: 82%; }
+[data-particle-x="83"] { left: 83%; }
+[data-particle-x="84"] { left: 84%; }
+[data-particle-x="85"] { left: 85%; }
+[data-particle-x="86"] { left: 86%; }
+[data-particle-x="87"] { left: 87%; }
+[data-particle-x="88"] { left: 88%; }
+[data-particle-x="89"] { left: 89%; }
+[data-particle-x="90"] { left: 90%; }
+[data-particle-x="91"] { left: 91%; }
+[data-particle-x="92"] { left: 92%; }
+[data-particle-x="93"] { left: 93%; }
+[data-particle-x="94"] { left: 94%; }
+[data-particle-x="95"] { left: 95%; }
+[data-particle-x="96"] { left: 96%; }
+[data-particle-x="97"] { left: 97%; }
+[data-particle-x="98"] { left: 98%; }
+[data-particle-x="99"] { left: 99%; }
+[data-particle-x="100"] { left: 100%; }
+
+/* Particle sizes */
+[data-particle-size="2"] { width: 2px; height: 2px; }
+[data-particle-size="3"] { width: 3px; height: 3px; }
+[data-particle-size="4"] { width: 4px; height: 4px; }
+[data-particle-size="5"] { width: 5px; height: 5px; }
+[data-particle-size="6"] { width: 6px; height: 6px; }
+[data-particle-size="7"] { width: 7px; height: 7px; }
+[data-particle-size="8"] { width: 8px; height: 8px; }

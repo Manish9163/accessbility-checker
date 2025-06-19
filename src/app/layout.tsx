@@ -1,5 +1,6 @@
 import './globals.css';
 import { ThemeProvider } from '../../components/ThemeProvider';
+import LoginPage from '../../components/LoginPage';
 
 export const metadata = {
   title: 'Accessibility Checker - AI-Powered Web Accessibility',
@@ -51,7 +52,7 @@ export default function RootLayout({
       </head>
       <body> 
       {/* className="antialiased bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-500 overflow-x-hidden">*/}
-
+          <LoginPage />
         <ThemeProvider>
           <div className="relative z-10">
             {children}

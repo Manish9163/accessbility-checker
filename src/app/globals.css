@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+/* Removed @custom-variant rules; use Tailwind's built-in dark mode support instead. */
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, .1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

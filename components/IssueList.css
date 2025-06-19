@@ -1,0 +1,77 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animation delays for issue cards */
+.issue-card-0 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 0ms;
+}
+
+.issue-card-1 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 50ms;
+}
+
+.issue-card-2 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 100ms;
+}
+
+.issue-card-3 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 150ms;
+}
+
+.issue-card-4 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 200ms;
+}
+
+.issue-card-5 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 250ms;
+}
+
+.issue-card-6 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 300ms;
+}
+
+.issue-card-7 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 350ms;
+}
+
+.issue-card-8 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 400ms;
+}
+
+.issue-card-9 {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 450ms;
+}
+
+/* Initial state for issue cards */
+.issue-card-0,
+.issue-card-1,
+.issue-card-2,
+.issue-card-3,
+.issue-card-4,
+.issue-card-5,
+.issue-card-6,
+.issue-card-7,
+.issue-card-8,
+.issue-card-9 {
+    opacity: 0;
+    transform: translateY(20px);
+}

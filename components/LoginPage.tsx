@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Check, Link2, Eye, Target, FileText, TrendingUp } from 'lucide-react';
 import './loginPage.css';
@@ -94,7 +95,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onSubmit }) => {
 
       {/* Main Container */}
       <div className="relative z-10 w-full max-w-md">
-        {/* Glassmorphism Card */}
+
         <div className="animate-slide-up bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] transform-gpu">
           
           {/* Logo Section */}
@@ -166,16 +167,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ onSubmit }) => {
           <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full animate-pulse"></div>
         </div>
 
-        {/* Floating Elements */}
         <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full animate-bounce opacity-70"></div>
         <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full animate-pulse opacity-70"></div>
         
-        {/* Additional floating elements */}
         <div className="absolute top-1/3 -left-8 w-12 h-12 bg-gradient-to-br from-indigo-400/30 to-purple-500/30 rounded-full animate-pulse blur-sm"></div>
         <div className="absolute bottom-1/3 -right-8 w-16 h-16 bg-gradient-to-br from-pink-400/20 to-rose-500/20 rounded-full animate-bounce blur-sm"></div>
       </div>
 
-      {/* Background Glow Effects */}
+      
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse animate-delay-1000"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse animate-delay-2000"></div>

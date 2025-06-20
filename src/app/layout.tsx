@@ -1,10 +1,9 @@
 import './globals.css';
 import { ThemeProvider } from '../../components/ThemeProvider';
-import LoginPage from '../../components/LoginPage';
-import React, { useState } from 'react';
+import AppShell from '../../components/AppLogin';
 
 export const metadata = {
-  title: 'Accessibility Checker - AI-Powered Web Accessibility',
+  title: 'Accessibility Checker - Web Accessibility',
   description: 'Modern accessibility checker with AI-powered insights and real-time monitoring.',
   keywords: 'accessibility, web accessibility, WCAG, compliance, AI',
   authors: [{ name: 'NEON' }],
@@ -20,16 +19,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // State to track if user has submitted a URL
-  const [submitted, setSubmitted] = React.useState(false);
-  const [userUrl, setUserUrl] = React.useState<string | null>(null);
-
-  // Callback for LoginPage
-  const handleLoginSubmit = (url: string) => {
-    setUserUrl(url);
-    setSubmitted(true);
-  };
-
   return (
     <html
       lang="en"
@@ -62,14 +51,9 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <div className="relative z-10">
-            {!submitted ? (
-              <LoginPage onSubmit={handleLoginSubmit} />
-            ) : (
-              // You can pass userUrl to children via context or props if needed
-              children
-            )}
-          </div>
+          <AppShell>
+            {children}
+          </AppShell>
         </ThemeProvider>
       </body>
     </html>

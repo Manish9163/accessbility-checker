@@ -1,8 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Check, Link2, Eye, Target, FileText, TrendingUp } from 'lucide-react';
+import { Check, Link2, Target, FileText, TrendingUp } from 'lucide-react';
 import './loginPage.css';
+
+
+export const metadata = {
+  title: 'Accessibility Checker - Web Accessibility'
+};
 
 interface LoginPageProps {
   onSubmit?: (url: string) => void;
@@ -58,7 +63,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onSubmit }) => {
     // Auto-add https:// if no protocol specified
     if (value && !value.match(/^https?:\/\//i)) {
       if (!value.includes('://')) {
-        value = 'https://' + value;
+        value = '' + value;
       }
     }
     
@@ -80,7 +85,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onSubmit }) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated Particles */}
+
       <div className="absolute inset-0 overflow-hidden">
         {particles.map((particle) => (
           <div
